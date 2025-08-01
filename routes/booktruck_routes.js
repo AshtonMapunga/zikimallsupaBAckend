@@ -22,7 +22,7 @@ router.get('/', async (req, res) => {
   }
 });
 
-// Update booking
+// Update booking hhh
 router.put('/:id', async (req, res) => {
   try {
     const updated = await bookingService.updateBooking(req.params.id, req.body);
