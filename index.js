@@ -7,6 +7,8 @@ const bodyParser = require('body-parser');
 
 
 const bookTruckRoutes = require('./routes/booktruck_routes');
+const truckMantRoutes = require('./routes/truckmantainance_routes');
+
 
 
 
@@ -29,6 +31,8 @@ app.use(express.json());
 
 
 app.use('/api/v1/booktruck_route', bookTruckRoutes);
+app.use('/api/v1/truckment_route', truckMantRoutes);
+
 
 
 
