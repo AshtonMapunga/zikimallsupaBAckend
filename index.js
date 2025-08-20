@@ -9,6 +9,10 @@ const bodyParser = require('body-parser');
 const bookTruckRoutes = require('./routes/booktruck_routes');
 const truckMantRoutes = require('./routes/truckmantainance_routes');
 const truckSecRoutes = require('./routes/security_truck_routes');
+const SparePartsRoutes = require('./routes/spare_parts_route');
+const SparePartsProductRoutes = require('./routes/spareParts_prod_routes');
+
+
 
 
 
@@ -35,6 +39,10 @@ app.use(express.json());
 app.use('/api/v1/booktruck_route', bookTruckRoutes);
 app.use('/api/v1/truckment_route', truckMantRoutes);
 app.use('/api/v1/trucksec_route', truckSecRoutes);
+app.use('spareParts_route', SparePartsRoutes);
+app.use('sparePartsProd_route', SparePartsProductRoutes);
+
+
 
 
 
